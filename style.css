@@ -105,21 +105,12 @@
     text-align: center;
     padding: 10px;  
     margin: 0 !important;
-  }
-  
-  @media screen and (max-width: 780px) {
-    .answer .answerNum{
-      width: 10%;
-   }
-  }
-  
+  } 
   .correct{
-    /* border: 1px solid green; */
     background-color: rgb(67, 195, 67);
   }
   
   .wrong{
-    /* border: 1px solid red; */
     background-color: rgb(144, 26, 26);
     color: #fff;
   }
