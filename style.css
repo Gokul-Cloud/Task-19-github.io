@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  #play
+{
+    background-color: lightblue;
+    width: 20rem;
+    height: 4rem;
+    display: block;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+#play:hover{
+    background-color: aliceblue;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb(76, 76, 209);
+    cursor: pointer;
+
+}
+#highscores
+{
+    background-color: lightblue;
+    width: 20rem;
+    height: 4rem;
+    display: block;
+    font-size: 1rem;
+    text-size-adjust: 3em;
+    border-radius: 5px;
+}
+#highscores:hover
+{
+    background-color: aliceblue;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb(72, 72, 223);
+    cursor: pointer;
+}
+.title 
+{
+    font-size: 2em;
+    background: rgb(76, 76, 209);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb(76, 76, 209) ;
+    margin-left: 2em;
+}
+.wrapper
+{
+    background: lightgoldenrodyellow;
+    position: absolute;
+    top: 10rem;
+    left:35rem;
+}
+  
+  .quizResult{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .question{
+    margin-top: 10px;
+  }
+  .question p{
+    margin-bottom: 0px;
+    padding: 10px;
+    font-weight: bolder;
+    color: rgb(102, 255, 0);
+    text-align: left;
+    width: 100%;
+    float: left;
+  }
+  
+  .answer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: margin-bottom 0.1s,margin-top 0.1s, border 0.1s;
+    -webkit-transition: margin-bottom 0.1s,margin-top 0.1s, border 0.1s;
+  }
+  
+  .answer:hover{
+    border: 2px solid rgb(50, 170, 150);
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    background-color: lightgoldenrodyellow;
+  }
+  
+  
+  .answer .answerNum{
+    width: 4%;
+    text-align: center;
+    padding: 10px;
+    margin: 0 ;
+    background-color: rgb(9, 22, 199);
+    color: #fff;
+  }
+  
+  .answer .answerValue{
+    text-align: center;
+    padding: 10px;  
+    margin: 0 !important;
+  }
+  
+  @media screen and (max-width: 780px) {
+    .answer .answerNum{
+      width: 10%;
+   }
+  }
+  
+  .correct{
+    /* border: 1px solid green; */
+    background-color: rgb(67, 195, 67);
+  }
+  
+  .wrong{
+    /* border: 1px solid red; */
+    background-color: rgb(144, 26, 26);
+    color: #fff;
+  }
+  
+  
+  .results{
+    margin: 20px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .endPage{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgoldenrodyellow;
+  }
+  
+  .highScoresList{
+    display: inline-block;
+    padding: 10px;
+
+  }
+  
+  .highScoresList p {
+    margin-right: 10px;
+  }
+  
+  .pageTitle{
+    color: #77eec6;
+  }
+  
+  #highestScorer{
+    color: rgb(255, 251, 0);
+  }
+  
+  .hide{
+    display: none;
+  }
